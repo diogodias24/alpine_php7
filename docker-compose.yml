@@ -1,0 +1,12 @@
+version: '3'
+
+services:  
+  alpine_php:
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    container_name: alpine_php
+    ports:
+      - "8100:80"
+    stdin_open: true
+    tty: true
