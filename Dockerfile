@@ -17,6 +17,8 @@ RUN set -x \
 #ADD NEW httpd.conf with rewrite enable
 ADD ./httpd.conf /etc/apache2/httpd.conf
 
+WORKDIR /var/www
+
 EXPOSE 80 443
 
 CMD ["/bin/sh"]
